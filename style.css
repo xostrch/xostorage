@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #092F2C;
+    width: 100vw;
+}
+
+header{
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    display: flex;
+}
+
+.header-logo{
+    width: 10em;
+    cursor: pointer;
+}
+
+.logo-box{
+    width: 50%;
+}
+
+.elements-header{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.header-links{
+    margin: 0.5em;
+    font-size: 1.1em;
+    color: #3EC4AC;
+    cursor: pointer;
+    padding: 0.8em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    transition: ease 0.5s;
+
+}
+
+.header-links:hover{
+    border: 1px solid;
+    color: #31de9a;
+    border-radius: 1em;
+}
+
+.main-image-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -4em;
+}
+
+.image-main{
+    width: 30em;
+    transition: ease-in 0.2s;
+}
+
+.main-text{
+        z-index: 1;
+        position: relative;
+}
+
+.main-text-big{
+    font-size: 2em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #4effdf;
+    font-weight: 500;
+}
+
+.main-text-small{
+    font-size: 1.1em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #44e3c6;
+    margin-top: 1em;
+}
+
+.custom-shape-divider-bottom-1749221408 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1749221408 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 124px;
+}
+
+.custom-shape-divider-bottom-1749221408 .shape-fill {
+    fill: #07211f;
+    z-index: -2;
+}
+
+.main-button{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    background-color: #07211f;
+}
+
+.main-button-get-started{
+    font-size: 1.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    color: #07211f;
+    background-color: #3cc4ab;
+    transition: ease-in 0.3s;
+    font-weight: 500;
+}
+
+.main-button-get-started:hover{
+    background-color: #31de9a;
+}
+
+.features-all{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #07211f;
+}
+
+.features-box{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.features-item{
+    width: 40%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.features-icon-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.features-icons{
+    width: 4em;
+}
+
+.features-big{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    font-weight: 600;
+    color: #4effdf;
+}
+
+.features-small{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #43ddc1;
+}
+
+.features-bottom-wave{
+    width: 100%;
+}
+
+.custom-shape-divider-top-1749239511 {
+    position: absolute;
+    bottom: -1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1749239511 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+}
+
+.custom-shape-divider-top-1749239511 .shape-fill {
+    fill: #07211f
+}
+
+.anywhere-all{
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+}
+
+.anywhere-left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.anywhere-img{
+    width: 35em;
+}
+
+.anywhere-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin-top: 8em;
+}
+
+.anywhere-title{
+    width: 100%;
+    color: #4effdf;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.anywhere-description{  
+    margin-top: 0.8em;
+    width: 100%;
+    color: #38b39d;
+    font-size: 1.1em;
+}
+
+.how-works{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #9fffed;
+    margin-top: 1.5em;
+}
