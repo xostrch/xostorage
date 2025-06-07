@@ -262,3 +262,174 @@ header{
     color: #9fffed;
     margin-top: 1.5em;
 }
+
+#carousel-container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.anywhere-all {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease;
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.active {
+  transform: translateX(0%);
+  z-index: 2;
+}
+
+.anywhere-description p{
+    margin-top: 0.5em;
+}
+
+
+#reviews-container {
+    width: 960px;
+    overflow-x: auto;
+    padding: 2em 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 40em;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+}
+
+.reviews-track {
+    display: flex;
+    gap: 30px; 
+    width: max-content; 
+}
+
+.reviews-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-box {
+    flex: 0 0 300px; 
+    height: 150px;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #07211f;
+    color: white;
+    border-radius: 8px;
+}
+
+.review-text{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.review-client{
+    display: flex;
+    margin-top: 2em;
+}
+
+.client-img{
+    width: 3em;
+}
+
+.review-client-description{
+    margin-left: 1em;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.client-name{
+    font-weight: 500;
+    font-size: 1em;
+    display: flex;
+    justify-content: left;
+
+}
+
+.client-who{
+    font-weight: 300;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: left;
+    margin-left: 1em;
+}
+
+.circle-box {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    margin-top: 5em;
+    display: none;
+}
+
+svg {
+  width: 10em;
+  height: 10em;
+  display: block;
+  margin: auto;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 1.1em;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  stroke-linecap: round;
+  animation: anim 2s linear forwards;
+  color: #50ffa2;
+}
+
+.circle-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: #50ffa2; 
+  user-select: none;
+}
+    @keyframes anim {
+      to {
+        stroke-dashoffset: 1;
+      }
+    }
+
+.circle-box-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.circle-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    color: #07211f;
+    background: linear-gradient(to left top, #40ff96, #3cc4ab);
+}
+
+.circle-button:hover{
+    background: linear-gradient(to left top, #2ec06f, #2c917f);
+    color: #4effdf
+}
