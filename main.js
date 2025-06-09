@@ -51,4 +51,10 @@ container.addEventListener('mouseleave', () => {
   isScrolling = false;
 });
 
+const buttonCircleBox = document.getElementById('circle-box-button');
+const circleBox = document.getElementById('circle-box');
 
+function showCircle(){
+  circleBox.style.display="inline";
+  buttonCircleBox.style.display="none";
+}

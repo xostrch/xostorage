@@ -305,6 +305,7 @@ header{
     scrollbar-width: none;
     -ms-overflow-style: none;
     overflow-x: hidden;
+    margin-bottom: 5em;
 }
 
 .reviews-track {
@@ -368,7 +369,6 @@ header{
     width: 10em;
     height: 10em;
     margin: 0 auto;
-    margin-top: 5em;
     display: none;
 }
 
@@ -419,9 +419,9 @@ circle {
     align-items: center;
     cursor: pointer;
     border: none;
-    font-size: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 1em;
@@ -432,4 +432,259 @@ circle {
 .circle-button:hover{
     background: linear-gradient(to left top, #2ec06f, #2c917f);
     color: #4effdf
+}
+
+.plans-header{
+    width: 100%;
+}
+
+.plans-all{
+    margin-top: 7em;
+    margin-bottom: 1em;
+}
+
+.plans-title{
+    font-size: 2.3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #40ff96;
+}
+
+.plans-title2{
+    font-size: 1.4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #3ad580;;
+    margin-top: 0.5em;
+}
+
+.plan-boxes{
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.plan-box-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-box{
+    background: linear-gradient(to top left, #40ff960a, #40ff9621);
+    width: 70%;
+    padding: 1em;
+    border-radius: 1em;
+    height: 30em;
+    transition: 0.2s ease-in;
+}
+
+.plan-box:hover{
+    transform: scale(1.08);
+}
+
+.plan-box-middle{
+    width: 80%;
+}
+
+.plan-name{
+    width: 100%;
+    display: flex;
+    margin-top: 0.5em;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #40ff96;
+    margin-bottom: 0.5em;
+}
+
+.plan-description{
+    color: #2fc271;
+    font-size: 0.8em;
+}
+
+.plan-price{
+    margin-top: 1em;
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.plan-dollar{
+    font-size: 2em;
+    display: flex;
+    color: #40ff96;
+}
+
+.plan-price-number{
+    font-size: 3em;
+    color: #92fcc2;
+    margin-left: 0.1em
+}
+
+
+.plan-button-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.plan-button{
+    font-size: 1.2em;
+    border: #00000000 solid 1px;
+    color: #92fcc2;
+    background-color:#0000002c;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.plan-button:hover{
+    border: #92fcc2 solid 1px;
+}
+
+.plan-benefits{
+    margin-top: 1em;
+}
+
+.plan-benefit{
+    color: #92fcc2;
+    border-bottom: #92fcc27b solid 1px;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.material-symbols-outlined{
+    margin-right: 0.2em;
+}
+
+.plan-popular{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.popular-text{
+    background-color: #40ff9625;
+    color: #40ff96;
+    padding-left: 1em;   
+    padding-right: 1em;   
+    border-radius: 1em;
+}
+
+.newsletter-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.newsletter-box{
+    width: 60%;
+    background-color: #00000054;
+    border-radius: 2em;
+    padding: 5em
+}
+
+.newsletter-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #40ff96;
+    margin-bottom: 1em;
+}
+
+.newsletter-input-box{
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-input{
+    width: 75%;
+    outline: none;
+    height: 3em;
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border: none;
+    background-color: #00000034;
+    color: #40ff96;
+}
+
+.newsletter-subscribe{
+    margin-left: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background: linear-gradient(to left top, #40ff96, #4ae6c9);
+    color: #000000b4;
+}
+
+.logo-box-up-footer{
+    margin-top: 5em;
+    background-color: #07211f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.logo-up-footer{
+    width: 10em;
+}
+
+footer{
+    width: 100%;
+    background-color: #07211f;
+    color: #35d9a8;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.footer-address{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact{
+    width: 25%;
+}
+
+.footer-contact-info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.footer-social{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    width: 2em;
+    margin: 0.5em;
+    margin-top: 0;
+}
+
+footer a:hover{
+    color: #26a27d;
 }

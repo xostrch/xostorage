@@ -6,6 +6,7 @@
     <title>XoStorage - Cloud Storage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -14,8 +15,8 @@
         </div>
         <div class="elements-header">
             <a href="#features"><span class="header-links">Features</span></a>
-            <a href="#"><span class="header-links">Reviews</span></a>
-            <a href="#"><span class="header-links">Contact</span></a>
+            <a href="#reviews-container"><span class="header-links">Reviews</span></a>
+            <a href="#plans"><span class="header-links">Plans</span></a>
             <a href="#"><span class="header-links">Log In</span></a>
         </div>
     </header>
@@ -103,6 +104,7 @@
             </div>
         </div>
     </div>
+
     <div id="reviews-container">
         <div class="reviews-track">
             <div class="review-box">
@@ -192,10 +194,10 @@
         </div>
     </div> 
 
-    <div class="circle-box-button">
-        <button class="circle-button">Show satisfaction rate</button>
+    <div class="circle-box-button" id="circle-box-button">
+        <button class="circle-button" onclick="showCircle()">Show satisfaction rate</button>
     </div>
-    <div class="circle-box">
+    <div class="circle-box" id="circle-box">
                 <div class="circle-number">100%</div>
                 <svg   svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 160 160">
         <defs>
@@ -207,12 +209,110 @@
         <circle 
             cx="80" 
             cy="80" 
-        
             r="70" 
             />
         </svg>
     </div>
     
+    <div class="plans-all" id="plans">
+        <div class="plans-header">
+            <span class="plans-title">Choose your plan</span>
+            <span class="plans-title2">Everything for you</span>
+        </div>
+        <div class="plan-boxes">
+            <div class="plan-box-container">
+                <div class="plan-box">
+                    <span class="plan-name">Free</span>
+                    <span class="plan-description">For individuals who need basic cloud storage.</span>
+                    <div class="plan-price">
+                        <span class="plan-dollar">$</span>
+                        <span class="plan-price-number">0.00</span>
+                    </div>
+                    <div class="plan-button-box">
+                        <button class="plan-button">Get started</button>
+                    </div>
+                    <div class="plan-benefits">
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>5GB</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>Up to 2 devices</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>Basic encryption</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>History disabled</div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-box-container">
+                <div class="plan-box plan-box-middle">
+                    <div class="plan-popular"><span class="popular-text">Popular</span></div>
+                    <span class="plan-name">Premium</span>
+                    <span class="plan-description">For power users who need more space, enhanced security, and seamless access across multiple devices.</span>
+                    <div class="plan-price">
+                        <span class="plan-dollar">$</span>
+                        <span class="plan-price-number">5.00</span>
+                    </div>
+                    <div class="plan-button-box">
+                        <button class="plan-button">Get started</button>
+                    </div>
+                    <div class="plan-benefits">
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>1TB</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>Unlimited devices</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>End-to-end encryption + 2FA</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>History up to 30 days</div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-box-container">
+                <div class="plan-box">
+                    <span class="plan-name">Business</span>
+                    <span class="plan-description">For teams and businesses that require reliable storage, shared workspace, and advanced user management features.</span>
+                    <div class="plan-price">
+                        <span class="plan-dollar">$</span>
+                        <span class="plan-price-number">20.00</span>
+                    </div>
+                    <div class="plan-button-box">
+                        <button class="plan-button">Get started</button>
+                    </div>
+                    <div class="plan-benefits">
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>5TB</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>Unlimited devices</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>End-to-end encryption, 2FA, admin controls</div>
+                        <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>History up to 180 days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-all">
+        <div class="newsletter-box">
+            <span class="newsletter-title">Get our free newsletter + BONUS</span>
+            <div class="newsletter-input-box">
+                <input type="email" class="newsletter-input">
+                <button class="newsletter-subscribe">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="logo-box-up-footer">
+        <a href="index.html"><img src="images/logo.png" class="logo-up-footer"></a>
+    </div>
+    <footer>
+        <div class="footer-address">
+            <span class="material-symbols-outlined">location_on</span>
+            <a href="#">Poland, Unknown</a>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-contact-info"><span class="material-symbols-outlined">phone_in_talk</span>
+                <a href="tel:#">+48 000 000 000</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-contact-info"><span class="material-symbols-outlined">mail</span>
+                <a href="mailto:#">xostorage@disk.xos</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/xostrch" target="_blank"><div class="footer-social-icon"><img src="images/favicon.png" class="social-icon"></div></a>
+            <a href="index.html"><div class="footer-social-icon"><img src="images/favicon.png" class="social-icon"></div></a>
+            <a href="https://instagram.com/xostrch" target="_blank"><div class="footer-social-icon"><img src="images/favicon.png" class="social-icon"></div></a>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
