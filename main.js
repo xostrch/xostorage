@@ -58,3 +58,17 @@ function showCircle(){
   circleBox.style.display="inline";
   buttonCircleBox.style.display="none";
 }
+
+
+function newsletterSubmit(){
+    newsletterBox = document.getElementById("newsletter-box");
+    
+    let thanks =
+    `
+    <div class="thanks-all">
+      <div class="thanks-title">The bonus has been sent to your email address.</div>
+      <div class="thanks-logo"><img src="images/logo.png" class="img-thanks"></div>
+    </div>
+    `
+    newsletterBox.innerHTML = thanks;
+}
