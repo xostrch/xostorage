@@ -62,7 +62,8 @@ function showCircle(){
 
 function newsletterSubmit(){
     newsletterBox = document.getElementById("newsletter-box");
-    
+    newsletterInput = document.getElementById('newsletter-input').value;
+    invalidNewsletter = document.getElementById('newsletter-invalid')
     let thanks =
     `
     <div class="thanks-all">
@@ -70,5 +71,114 @@ function newsletterSubmit(){
       <div class="thanks-logo"><img src="images/logo.png" class="img-thanks"></div>
     </div>
     `
-    newsletterBox.innerHTML = thanks;
+
+    if(/\@/.test(newsletterInput) && /\./.test(newsletterInput)){
+      newsletterBox.innerHTML = thanks;
+    }else{
+      invalidNewsletter.innerHTML = "wrong email";
+    }
+}
+
+function getStarted(){
+  window.location.href = "register.html";
+}
+
+
+function getLogin(){
+  let loginUsernameInput = document.getElementById("login-username");
+  let loginPasswordInput = document.getElementById("login-password");
+
+  let loginCorrect = "xostorage";
+  let passwordCorrect = "admin123"
+
+  let loginInvalidBox = document.getElementById('login-invalid-box')
+  let loginInvalidLoginOrPassword = 
+  `
+    <p class="login-invalid-text">Invalid username or password</p>
+  `
+
+    if(loginPasswordInput.value === passwordCorrect && loginUsernameInput.value === loginCorrect)
+    {
+      window.location.href = "login-success.html";
+    }else{
+      loginPasswordInput.value = "";
+      loginUsernameInput.value = "";
+      loginInvalidBox.innerHTML = loginInvalidLoginOrPassword;
+    }
+}
+
+function getSignUp(){
+  let registerName = document.getElementById('first-name').value;
+  let registerSurname = document.getElementById('surname').value;
+  let registerUsername = document.getElementById('username').value; 
+  let registerEmail = document.getElementById('email').value;
+  let registerPassword = document.getElementById('password').value;
+  let registerPasswordRepeat = document.getElementById('password-repeat').value;
+
+  let registerInvalidBox = document.getElementById('register-invalid-box');
+  let registerInvalidTekst = `<p class="register-invalid-text"></p>`
+
+  let registerNameBoolean;
+  let registerSurnameBoolean;
+  let registerUsernameBoolean;
+  let registerEmailBoolean;
+  let registerPasswordBoolean;
+  let registerRepeat;
+
+    registerInvalidBox.innerHTML="";
+
+    if(registerName.length>2){
+      registerNameBoolean = true;
+    }else{
+      registerNameBoolean = false;
+      registerInvalidBox.innerHTML += "*invalid first name<br>"
+      document.getElementById('first-name').value="";
+    }
+    
+    if(registerSurname.length>2){
+      registerSurnameBoolean = true;
+    }else{
+      registerSurnameBoolean = false;
+      registerInvalidBox.innerHTML += "*invalid surname<br>"
+      document.getElementById('surname').value="";
+    }
+    
+    if(/^[a-zA-Z]+$/.test(registerUsername) && registerUsername.length>2){
+      registerUsernameBoolean = true;
+    }else{
+      registerUsernameBoolean = false;
+      registerInvalidBox.innerHTML += "*invalid username<br>"
+      document.getElementById('username').value="";
+    }
+
+    if(/\@/.test(registerEmail) && /\./.test(registerEmail)){
+      registerEmailBoolean = true;
+    }else{
+      registerEmailBoolean = false;
+      registerInvalidBox.innerHTML += "*invalid email<br>"
+      document.getElementById('email').value="";    
+    }
+
+    if(registerPassword.length>9){
+      registerPasswordBoolean = true;
+    }else{
+      registerPasswordBoolean = false;
+      registerInvalidBox.innerHTML += "*invalid password<br>"
+      document.getElementById('password').value="";   
+      document.getElementById('password-repeat').value="";
+    }
+
+    if(registerPassword === registerPasswordRepeat){
+      registerRepeat = true;
+    }else{
+      registerRepeat = false;
+      registerInvalidBox.innerHTML += "*passwords do not match<br>"
+      document.getElementById('password').value="";   
+      document.getElementById('password-repeat').value="";
+    }
+
+    if(registerNameBoolean && registerSurnameBoolean && registerUsernameBoolean && registerEmailBoolean && registerPassword && registerRepeat)
+    {
+      window.location.href="register-success.html"
+    }
 }

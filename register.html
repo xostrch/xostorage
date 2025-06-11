@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XoStorage - Cloud Storage</title>
+    <title>XoStorage - Create an Account</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -24,29 +24,29 @@
             <div class="register-right">
                 <span class="register-title">Sign Up</span>
                 <div class="register-input-box">
-                    <input type="text" class="register-input" placeholder="first name"><i class="fa-solid fa-user register-icon"></i>
+                    <input type="text" class="register-input" placeholder="first name" id="first-name"><i class="fa-solid fa-user register-icon"></i>
                 </div>
                 <div class="register-input-box">
-                    <input type="text" class="register-input" placeholder="surname"><i class="fa-solid fa-user register-icon"></i>
+                    <input type="text" class="register-input" placeholder="surname" id="surname"><i class="fa-solid fa-user register-icon"></i>
                 </div>
                 <div class="register-input-box">
-                    <input type="text" class="register-input" placeholder="username"><i class="fa-solid fa-user-secret register-icon"></i>
+                    <input type="text" class="register-input" placeholder="username" id="username"><i class="fa-solid fa-user-secret register-icon"></i>
                 </div>
                 <div class="register-input-box">
-                    <input type="text" class="register-input" placeholder="email"><i class="fa-solid fa-square-envelope register-icon"></i></i>
+                    <input type="text" class="register-input" placeholder="email" id="email"><i class="fa-solid fa-square-envelope register-icon"></i></i>
                 </div>
                 <div class="register-input-box">
-                    <input type="password" class="register-input" placeholder="password"><i class="fa-solid fa-lock register-icon"></i>
+                    <input type="password" class="register-input" placeholder="password" id="password"><i class="fa-solid fa-lock register-icon"></i>
                 </div>
                 <div class="register-input-box">
-                    <input type="password" class="register-input" placeholder="repeat password"><i class="fa-solid fa-lock register-icon"></i>
+                    <input type="password" class="register-input" placeholder="repeat password" id="password-repeat"><i class="fa-solid fa-lock register-icon"></i>
                 </div>
                 <div class="register-button-box">
-                    <button class="register-button">Sign In</button>
+                    <button class="register-button" onclick="getSignUp()">Sign Up</button>
                 </div>
                 <span class="register-ask"><a href="login.html">Have already an account?</a></span>
-                <div class="register-invalid-box">
-                    <p class="register-invalid-text">chuj</p>
+                <div class="register-invalid-box" id="register-invalid-box">
+                    
                 </div>
             </div>
         </div>
@@ -77,6 +77,7 @@
             <a href="https://instagram.com/xostrch" target="_blank"><div class="footer-social-icon"><img src="images/instagram.png" class="social-icon"></div></a>
         </div>
     </footer>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/dcbd2e1e7b.js" crossorigin="anonymous"></script>
 </body>
 </html>

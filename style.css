@@ -844,6 +844,11 @@ footer a:hover{
     margin: 1em;
     display: flex;
     align-items: center;
+    
+}
+
+.register-input::placeholder{
+    color: #ffffff23;
 }
 
 .register-input{
@@ -857,6 +862,9 @@ footer a:hover{
     padding-bottom: 0.5em;
     display: flex;
     align-items: center;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.235);
+    color: #40ff96;
 }
 
 .register-icon{
@@ -901,12 +909,10 @@ footer a:hover{
 .register-invalid-box{
     padding-left: 1em;
     margin-top: 0.5em;
-}
-
-.register-invalid-text{
     color: red;
     font-size: 0.8em;
 }
+
 
 .login-invalid-box{
     padding-left: 1em;
@@ -917,3 +923,23 @@ footer a:hover{
     color: red;
     font-size: 0.8em;
 }
+
+.successfully{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    height: 3em;
+    color: #40ff96;
+    font-weight: 700;
+    text-align: center;
+}
+
+#newsletter-invalid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 0.2em;
+}
+

@@ -29,7 +29,7 @@
             <span class="main-text-small">Store - Sync - Access - Anywhere - Anytime</span>
         </div>
         <div class="main-button">
-            <a href="#"><button class="main-button-get-started">Get Started</button></a>
+            <a href="#"><button class="main-button-get-started" onclick="getStarted()">Get Started</button></a>
         </div>
         <div class="custom-shape-divider-bottom-1749221408">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -230,7 +230,7 @@
                         <span class="plan-price-number">0.00</span>
                     </div>
                     <div class="plan-button-box">
-                        <button class="plan-button">Get started</button>
+                        <button class="plan-button" onclick="getStarted()">Get started</button>
                     </div>
                     <div class="plan-benefits">
                         <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>5GB</div>
@@ -250,7 +250,7 @@
                         <span class="plan-price-number">5.00</span>
                     </div>
                     <div class="plan-button-box">
-                        <button class="plan-button">Get started</button>
+                        <button class="plan-button" onclick="getStarted()">Get started</button>
                     </div>
                     <div class="plan-benefits">
                         <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>1TB</div>
@@ -269,7 +269,7 @@
                         <span class="plan-price-number">20.00</span>
                     </div>
                     <div class="plan-button-box">
-                        <button class="plan-button">Get started</button>
+                        <button class="plan-button" onclick="getStarted()">Get started</button>
                     </div>
                     <div class="plan-benefits">
                         <div class="plan-benefit"><span class="material-symbols-outlined">priority</span>5TB</div>
@@ -285,9 +285,10 @@
         <div class="newsletter-box" id="newsletter-box">
             <span class="newsletter-title">Get our free newsletter + BONUS</span>
             <div class="newsletter-input-box">
-                <input type="email" class="newsletter-input">
+                <input type="text" class="newsletter-input" id="newsletter-input">
                 <button class="newsletter-subscribe" onclick="newsletterSubmit()">Subscribe</button>
             </div>
+            <span id="newsletter-invalid"></span>
         </div>
     </div>
     <div class="logo-box-up-footer">
