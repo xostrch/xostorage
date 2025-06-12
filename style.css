@@ -122,7 +122,6 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 1.5em;
-    background-color: #07211f;
 }
 
 .main-button-get-started{
@@ -149,6 +148,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: #07211f;
+    padding-top: 5em;
 }
 
 .features-box{
@@ -864,7 +864,7 @@ footer a:hover{
     align-items: center;
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, 0.235);
-    color: #40ff96;
+    color: #40ffd6;
 }
 
 .register-icon{
@@ -943,3 +943,67 @@ footer a:hover{
     margin-top: 0.2em;
 }
 
+
+@media (max-width: 992px){
+
+
+    .elements-header{
+        width: 100%;
+    }
+
+    .custom-shape-divider-bottom-1749221408 {
+        position: relative;
+        bottom: -1em;
+    }
+
+    .anywhere-all{
+        margin-top: 0;
+    }
+
+    .anywhere-left{
+        align-items: center;
+    }
+
+    .anywhere-img{
+        width: 25em;
+        height: 25em;
+    }
+
+    .anywhere-right{
+        margin-top: 0;
+    }
+
+    .anywhere-title{
+        font-size: 1.5em;
+    }
+
+    .anywhere-description{  
+        font-size: 0.9em;
+    }
+
+    .features-all{
+        padding-top: 2em;
+        margin-bottom: -0.1em;
+    }
+
+    .features-icons{
+        width: 3em;
+    }
+
+    .features-big{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .features-small{
+        font-size: 0.8em;
+    }
+
+    .custom-shape-divider-top-1749239511 {
+    position: relative;
+    bottom: -7em;
+    }
+
+    /*REVIEWS*/
+ 
+}
