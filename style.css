@@ -1004,6 +1004,145 @@ footer a:hover{
     bottom: -7em;
     }
 
-    /*REVIEWS*/
- 
+    #reviews-container {
+    width: 80%;
+    margin-top: 30em;
+    }
+
+    .plan-dollar{
+        font-size: 1.5em;
+    }
+
+    .plan-price-number{
+        font-size: 2em;
+    }
+
+    .plan-button{
+        font-size: 1em;
+    }
+
+    .newsletter-title{
+        text-align: center;
+    }
+
 }
+
+
+/*768*/
+@media (max-width: 750px){
+        header{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 2em;
+    }
+
+    .header-logo{
+        width: 5em;
+    }
+
+    .logo-box{
+        width: 20%;
+    }
+
+    .elements-header{
+        width: 80%;
+        margin-top: -2em;
+    }
+
+    .header-links{
+        font-size: 0.8em;
+        padding: 0.2em;
+    }
+
+    .main-image-box{
+        margin-top: -2em;
+    }
+
+    .image-main{
+        width: 20em;
+    }
+
+
+    .main-text{
+        z-index: 1;
+        position: relative;
+    }
+
+    .main-text-big{
+        font-size: 1.2em;
+    }
+
+    .main-text-small{
+        font-size: 0.8em;
+        width: 100vw;
+    }
+
+    .main-button-get-started{
+        font-size: 1em;
+    }
+
+    .custom-shape-divider-bottom-1749221408 {
+        position: relative;
+    }
+
+    .features-all{
+        padding-top: 1em
+    }
+
+    .features-box{
+        width: 95%;
+    }
+
+    .features-item{
+        width: 50%;
+        margin: 0.2em;
+        padding: 0.2em;
+    }
+
+    .features-icons{
+        width: 3em;
+    }
+
+    .features-big{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        margin-top: 1em;
+        font-weight: 600;
+        color: #4effdf;
+    }
+
+    .features-small{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 0.5em;
+        color: #43ddc1;
+    }
+
+
+    .anywhere-img{
+        width: 15em;
+        height: 15em
+    }
+
+    .anywhere-right{
+        padding: 0.5em;
+        margin-top: 0em;
+    }
+
+    .anywhere-title{
+        width: 100%;
+        color: #4effdf;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .anywhere-description{  
+        font-size: 0.8em;
+    }
+
+} 
