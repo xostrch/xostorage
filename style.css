@@ -95,7 +95,7 @@ header{
 }
 
 .custom-shape-divider-bottom-1749221408 {
-    position: absolute;
+    position: re;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1143,6 +1143,99 @@ footer a:hover{
 
     .anywhere-description{  
         font-size: 0.8em;
+    }
+
+    .plans-all{
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+    .plans-title{
+        font-size: 2em;
+    }
+
+    .plans-title2{
+        font-size: 1.2em;
+    }
+
+    .plan-boxes{
+        display: inline;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .plan-box-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-box{
+        margin-top: 2em;
+    }
+
+    .plan-box-middle{
+        width: 70%;
+    }
+
+    .newsletter-all{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        padding: 0.5em;
+    }
+
+    .newsletter-title{
+        font-size: 1.2em;
+    }
+
+    .newsletter-input{
+        font-size: 0.8em;
+    }
+
+    .newsletter-subscribe{
+        font-size: 0.8em;
+    }
+
+    .logo-box-up-footer{
+        margin-top: 2em;
+    }
+
+    .logo-up-footer{
+        width: 8em;
+    }
+
+    footer{
+        flex-direction: column
+    }
+
+    .footer-address{
+        width:100%;
+        margin-bottom: 1em;
+    }
+
+    .footer-contact{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .footer-contact-info{
+        margin-bottom: 0em;
+    }
+
+    .footer-social{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .social-icon{
+        width: 2em;
+        margin: 0.5em;
+        margin-top: 0;
+    }
+
+    footer a:hover{
+        color: #26a27d;
     }
 
 } 
