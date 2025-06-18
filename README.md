@@ -16,6 +16,7 @@
 - 💬 Review carousel  
 - 📦 User plan pricing section  
 - 🎨 Google Fonts & Font Awesome integration
+- 💸 Progress Bar for checking price of GBs
 
 ---
 
