@@ -182,3 +182,16 @@ function getSignUp(){
       window.location.href="register-success.html"
     }
 }
+
+
+function checkPrice(){
+  let progressBarValue = document.getElementById("progressBar").value;
+  let gbBox = document.getElementById("gbBox");
+  let priceBox = document.getElementById("priceBox")
+
+  priceInDollar = (progressBarValue*0.07).toFixed(2);
+  
+
+  gbBox.innerHTML = progressBarValue+" GB"
+  priceBox.innerHTML = priceInDollar+"$";
+}
