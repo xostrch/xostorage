@@ -42,6 +42,8 @@ Password: admin123
 ### 🔐 Login Page  
 ![Login Page](./screenshots/screen-3.png)
 
+### 🔐 Checking price of GBs 
+![Checking price of ](./screenshots/screen-5.png)
 ---
 
 ## 🛠️ Built With
