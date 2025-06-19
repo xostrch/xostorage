@@ -16,6 +16,7 @@
 - 💬 Review carousel  
 - 📦 User plan pricing section  
 - 🎨 Google Fonts & Font Awesome integration
+- 💸 Progress Bar for checking price of GBs
 
 ---
 
@@ -42,6 +43,8 @@ Password: admin123
 ### 🔐 Login Page  
 ![Login Page](./screenshots/screen-3.png)
 
+### 🔐 Checking price of GBs 
+![Checking price of ](./screenshots/screen-5.png)
 ---
 
 ## 🛠️ Built With
