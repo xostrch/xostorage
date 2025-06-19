@@ -1155,6 +1155,28 @@ footer a:hover{
         margin-top: 1em;
     }
 
+    .progress-bar-logo{
+        width: 10em;
+    }
+
+    .progress-bar-right{
+        width: 20em;
+        padding: 1em;
+    }
+
+    .progress-bar-info{
+        font-size: 1em;
+    }
+
+    .progress-bar-max-min{
+        font-size: 0.7em;
+        margin-bottom: 1em;
+    }
+
+    .progress-buy-button{
+        font-size: 1em;
+    }
+
 }
 
 
@@ -1406,6 +1428,50 @@ footer a:hover{
     .register-ask{
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+
+    .progress-bar-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 20em;
+        margin-top: 2em;
+        margin-bottom: 15em;
+    }
+
+    .progress-bar-logo{
+        width: 10em;
+    }
+
+    .progress-bar-right{
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 2em;
+    }
+
+    .progress-bar-left{
+        width: 100%;
+        padding-top: 0;
+        border-top-left-radius:0;
+        margin-right: 0;
+    }
+
+
+    .progress-bar-max-min{
+        margin-bottom: 1.5em;
+    }
+
+    .progress-bar-min{
+        margin-left: 2em;
+    }
+
+    .progress-bar-max{
+        margin-right:2em;;
+    }
+
+    .slider {
+    width: 80%;
     }
 
 } 
